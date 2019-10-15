@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML과 CSS </title>
+    <style>
+        body {
+            margin: 0;
+        }
+        a {
+            color: red;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            margin: 0;
+            padding: 20px;
+        }
+        .saw {
+            color: blue;
+        }
+        .gogo {
+            color: indigo;
+        }
+        #grid ol {
+            border-right: 1px solid grey;
+            width: 150px;
+            margin: 0px;
+            padding: 10px;
+            padding-left:30px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns:  200px 1fr;
+        }
+        #grid #aricle {
+            padding-left:25px;
+        }
+        @media(max-width:634px) {
+            #grid {
+            display: block;
+            }
+            #grid ol {
+            border-right:none;
+            }
+            h1 {
+            border-bottom:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <div id="grid">
+        <ol>
+            <li>html</li>
+            <li>css</li>
+            <li>Javascript</li>
+        </ol>
+        <div id="article">
+        <p>
+        <h2>HTML</h2>
+        인터넷 서비스의 하나인 월드 와이드 웹을 통해 볼 수 있는 문서를 만들 때 사용하는 웹 언어의 한 종류이다. 특히 하이퍼텍스트를 작성하기 위해 개발되었으며, 인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.
+         HTML [Hypertext Markup Language] 
+        </div>
+    </div>
+</html>
+</body>
